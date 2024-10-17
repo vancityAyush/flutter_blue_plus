@@ -18,6 +18,9 @@ jobs:
         with:
           flutter-version: '3.22.2'
           channel: stable
+
+      - name: Change directory to examples
+        run: cd examples
           
       - name: Install dependencies
         run: flutter pub get
