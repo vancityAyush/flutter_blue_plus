@@ -2,7 +2,7 @@ name: Flutter Release Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build_and_release:
@@ -18,9 +18,6 @@ jobs:
         with:
           flutter-version: '3.22.2'
           channel: stable
-
-      - name: Change directory to example
-        run: cd example
           
       - name: Install dependencies
         run: flutter pub get
